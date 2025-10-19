@@ -61,6 +61,8 @@ main {
 main h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 6px #8b4513;
 }
 
 main p {
@@ -88,4 +90,65 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9em;
+}
+
+.fundo-galeria {
+    background: url('caféfundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.fundo-galeria {
+    background-color: #fdf6e3;
+    font-family: 'Georgia', serif;
+    color: #4b2e2e;
+    margin: 0;
+    background-image: url('caféfundo.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.fundo-principal {
+    background-image: url('fundocaceteria.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.cafe {
+    background: rgba(255,255,255,0.92);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    width: 220px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.cafe:hover {
+    transform: scale(1.05);
+}
+
+.cafe img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.cafe h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #8b4513;
 }
