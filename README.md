@@ -143,9 +143,6 @@ Este projeto está distribuído sob a Licença MIT. Veja o arquivo `LICENSE` par
 
 ---
 
-## 👨‍💻 Autor
-
-Feito com ❤️ por **[SEU NOME]**
 
 <div align="left">
   <a href="https://github.com/SEU_USUARIO" target="_blank">
