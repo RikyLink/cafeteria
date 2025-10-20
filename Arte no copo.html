@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arte no Copo</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-pedir {
+            display: inline-block;
+            background: #8b4513;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 30px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: background 0.3s, transform 0.3s;
+            animation: pulse 1.2s infinite;
+            text-decoration: none;
+        }
+        .btn-pedir:hover {
+            background: #d2691e;
+            transform: scale(1.07);
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #d2691e55; }
+            70% { box-shadow: 0 0 20px 10px #d2691e22; }
+            100% { box-shadow: 0 0 0 0 #d2691e55; }
+        }
+        .centralizado {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .centralizado img {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body class="fundo-principal">
     <header>
-        <img src="Logo.png" alt="Arte no Copo" class="logo-header" style="max-width: 250px;">
+        <img src="gatito.png" alt="Mascote Gatinho para Ajuda">
+        <h1>Arte no Copo</h1>
         <nav>
             <ul>
                 <li><a href="Arte no copo.html">Página inicial</a></li>
@@ -22,9 +59,11 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="centralizado">
             <h2>Bem-vindo ao Arte no Copo!</h2>
             <p>Descubra os melhores cafés e bebidas artesanais feitos com paixão e criatividade. Venha nos visitar e experimente o sabor único que só o Arte no Copo pode oferecer.</p>
+            <img src="gatito.png" alt="Imagem de uma xícara de café" style="width:100%;max-width:600px;">
+            <a href="menu.html" class="btn-pedir">Peça o seu já!!</a>
         </section>
     </main>
     <footer>

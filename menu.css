@@ -1,6 +1,6 @@
 /* Estilos do Cabeçalho e Navegação */
 body {
-    background-image: url('arte coffe shop.jpg');
+    background-image: url('fundocafépessoas.jpeg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ header {
 }
 
 header img {
-    max-width: 250px;
+    max-width: 100px;
     display: block;
     margin: 0 auto 10px;
 }

@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Fotos</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .destaque-pedidos {
+            display: inline-block;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 1px 10px rgba(210,105,30,0.18);
+            padding: 6px 18px;
+            text-align: center;
+            color: #8b4513;
+            font-size: 1em;
+            font-weight: 600;
+            margin: 24px auto 8px auto;
+            letter-spacing: 1px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.92;
+            animation: pulse 1.2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 #d2691e55;
+            }
+            70% {
+                box-shadow: 0 0 24px 12px #d2691e33;
+            }
+            100% {
+                box-shadow: 0 0 0 0 #d2691e55;
+            }
+        }
+    </style>
 </head>
 <body class="fundo-galeria">
     <header>
-        <img src="Logo.png" alt="Arte no Copo" class="logo-header" style="max-width: 250px;">
+        <img src="gatito.png" alt="Mascote Gatinho para Ajuda">
+        <h1>Arte no Copo</h1>
         <nav>
             <ul>
                 <li><a href="Arte no copo.html">Página inicial</a></li>
@@ -22,6 +54,7 @@
         </nav>
     </header>
     <main>
+        <div class="destaque-pedidos">OS MAIS PEDIDOS!</div>
         <h2>Galeria de Cafés</h2>
         <section class="galeria">
             <div class="cafe">
