@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+             body.fundo-mapa {
+            background-image: url('c:\Users\xeque\Downloads\projeto_site_cafeteria_com_cadastro\projeto da disciplina\fundocaceteria.jpeg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+             }
+        
+        .local-info {
+            background: rgba(255,255,255,0.92);
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            max-width: 600px;
+            margin: 40px auto 24px auto;
+            padding: 24px;
+            text-align: center;
+        }
+        .local-imagens {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .local-imagens img {
+            width: 340px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+            transition: transform 0.2s;
+        }
+        .local-imagens img:hover {
+            transform: scale(1.04);
+        }
+        .mapa-embed {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body class="fundo-mapa">
+    <header>
+        <img src="gatito.png" alt="Mascote Gatinho para Ajuda">
+        <h1>Arte no Copo</h1>
+        <nav>
+            <ul>
+                <li><a href="Arte no copo.html">Página inicial</a></li>
+                <li><a href="menu.html">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="mapa.html">Nossa Localização</a></li>
+                <li><a href="Perfil.html">Usuário</a></li>
+                <li><a href="fotos.html">galeria de fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="local-info">
+            <h2>Nossa Localização</h2>
+            <p>
+                Estamos na <strong>Avenida Salgado Filho</strong>, em Guarulhos, próximo à Cruzeiro do Sul.<br>
+                Atendemos no local há mais de <strong>20 anos</strong>, sempre com qualidade e carinho!
+            </p>
+        </div>
+        <div class="mapa-embed">
+            <iframe src="https://www.google.com/maps?q=Avenida+Salgado+Filho,+Guarulhos&output=embed" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="local-imagens">
+            <img src="fachadona.jpeg" alt="Foto da fachada da cafeteria">
+            <img src="fachadinha.jpeg" alt="Foto do interior da cafeteria">
+            <img src="fachadona.jpeg" alt="Foto do ambiente externo">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Arte no Copo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

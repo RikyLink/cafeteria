@@ -1,0 +1,525 @@
+/* Estilos do Cabeçalho e Navegação */
+body {
+    background-image: url('fundocafépessoas.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d2691e;
+}
+
+
+/* Estilos Gerais do Corpo e Fontes */
+body {
+    background-color: #fdf6e3;
+    font-family: 'Georgia', serif;
+    color: #4b2e2e;
+    margin: 0;
+    background-image: url('caféfundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main.menu-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilos do Conteúdo do Menu */
+.main-title {
+    background-color: rgba(139, 69, 19, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.main-title .subtitle {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 0.6em;
+    text-transform: none;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.menu-category {
+    background-color: rgba(139, 69, 19, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-category.zoomed {
+    transform: translate(-50%, -50%) scale(1.15);
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    z-index: 10;
+    width: 80%;
+    max-width: 500px;
+}
+
+.menu-category:not(.zoomed):hover {
+    transform: scale(1.03);
+}
+
+.menu-category h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.menu-category .description {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.item-name {
+    order: 1;
+    padding-right: 10px;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.item-dots {
+    order: 2;
+    flex-grow: 1;
+    border-bottom: 2px dotted #fff;
+    position: relative;
+    bottom: 4px;
+}
+
+.item-price {
+    order: 3;
+    padding-left: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Remove estilização antiga de spans */
+.menu-item span + span {
+    margin-left: 0;
+}
+
+.star {
+    color: #FFD700;
+}
+
+.vegan {
+    color: #2E8B57;
+}
+
+.separator {
+    background-color: rgba(139, 69, 19, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 20px auto 40px auto;
+}
+
+.art-section {
+    background-color: rgba(139, 69, 19, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.art-section:hover {
+    transform: scale(1.03);
+}
+
+.art-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    margin-top: 0;
+}
+
+.art-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.art-section p {
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+.art-section ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.art-section li {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 25px;
+    }
+
+    .main-title {
+        font-size: 2.2em;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 5;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#overlay.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilos do Sistema de Recomendação */
+#recommendation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 100;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#recommendation-overlay.visible {
+    display: block;
+    opacity: 1;
+}
+
+#prompt-box, #quiz-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: rgba(139, 69, 19, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    z-index: 101;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#prompt-box.visible, #quiz-modal.visible {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.prompt-mascot {
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    z-index: 102;
+}
+
+#prompt-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+#prompt-box p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.prompt-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.prompt-buttons button, .quiz-answers button, #restart-quiz {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.prompt-buttons button:hover, .quiz-answers button:hover, #restart-quiz:hover {
+    transform: translateY(-2px);
+}
+
+#start-recommendation {
+    background-color: #d2691e;
+    color: white;
+}
+
+#close-prompt {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#quiz-modal {
+    max-width: 500px;
+}
+
+#close-quiz {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5em;
+    cursor: pointer;
+    line-height: 1;
+}
+
+#quiz-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+}
+
+.quiz-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answer-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+.answer-btn:hover {
+    background-color: #d2691e;
+    border-color: #d2691e;
+}
+
+#recommendation-result h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #FFD700;
+}
+
+#recommendation-result p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#restart-quiz {
+    background-color: #d2691e;
+    color: white;
+}
+/* Estilos do Botão de Ajuda Flutuante */
+#floating-chat-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#floating-chat-button:hover {
+    transform: scale(1.1);
+}
+
+#floating-chat-button img {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.speech-bubble {
+    position: absolute;
+    top: -40px;
+    right: 100px;
+    background-color: rgba(139, 69, 19, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 180px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#floating-chat-button:hover .speech-bubble {
+    opacity: 1;
+    visibility: visible;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(139, 69, 19, 0.75) transparent transparent transparent;
+}
